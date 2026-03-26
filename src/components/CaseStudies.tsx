@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import maternityImg from "@/assets/case-study-maternity.jpg";
 import learningImg from "@/assets/case-study-learning.jpg";
 import contentImg from "@/assets/case-study-content.jpg";
@@ -12,6 +13,7 @@ const caseStudies = [
     description:
       "Redesigned a maternity care dashboard used by clinicians to monitor patient vitals and identify high-risk cases. The project focused on improving alert visibility, patient monitoring workflows, and structuring complex clinical data to support faster decision-making in high-pressure environments.",
     image: maternityImg,
+    link: "/case-study/1",
   },
   {
     title: "Improving Engagement in an Employability Learning Platform",
@@ -21,6 +23,7 @@ const caseStudies = [
     description:
       "Worked closely with product and engineering teams to improve usability and engagement across the product. The work focused on simplifying onboarding, improving navigation and UI clarity, and introducing in-app guidance and notification systems that encouraged users to return, continue learning, and stay engaged with the platform.",
     image: learningImg,
+    link: "/case-study/2",
   },
   {
     title: "Designing a Scalable Content Builder for Learning Platform",
@@ -30,6 +33,7 @@ const caseStudies = [
     description:
       "As the sole UX designer, I worked closely with product and engineering teams to improve usability and engagement across the product. The work focused on simplifying onboarding, improving navigation and UI clarity, and introducing in-app guidance and notification systems.",
     image: contentImg,
+    link: "/case-study/3",
   },
 ];
 
