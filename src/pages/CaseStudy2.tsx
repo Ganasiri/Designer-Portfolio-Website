@@ -2,10 +2,12 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import cs2Hero from "@/assets/cs2-hero.jpg";
 import cs2Journey from "@/assets/cs2-journey.jpg";
+import cs2Discovery from "@/assets/cs2-discovery.jpg";
 import cs2Solution1 from "@/assets/cs2-solution1.jpg";
 import cs2Solution2 from "@/assets/cs2-solution2.jpg";
 import cs2Solution3 from "@/assets/cs2-solution3.jpg";
 import cs2Solution4 from "@/assets/cs2-solution4.jpg";
+import cs2Solution5 from "@/assets/cs2-solution5.jpg";
 
 const CaseStudy2 = () => {
   useEffect(() => {
@@ -54,6 +56,11 @@ const CaseStudy2 = () => {
             <span className="text-foreground font-medium">Oct 2024 — Nov 2025</span>
           </div>
         </div>
+      </section>
+
+      {/* Hero Image */}
+      <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
+        <img src={cs2Hero} alt="Learning platform overview" className="w-full" />
       </section>
 
       {/* Project Brief */}
@@ -123,8 +130,18 @@ const CaseStudy2 = () => {
         </div>
       </section>
 
+      {/* Discovery Process */}
+      <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
+        <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8">Discovery Process</h2>
+        <p className="text-muted-foreground leading-relaxed max-w-[60ch] mb-8">
+          Conducted user interviews, analyzed behavioral data, and mapped existing workflows to identify friction points and opportunities for improving engagement throughout the learning experience.
+        </p>
+        <img src={cs2Discovery} alt="Discovery process overview" className="w-full" />
+      </section>
+
       {/* Design Solution */}
       <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
+        <div className="h-px bg-border mb-12" />
         <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">Design Solution</h2>
 
         {/* Solution 1 */}
@@ -187,6 +204,22 @@ const CaseStudy2 = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Built gamification elements and streak-based systems to create positive feedback loops. Push notifications and in-app prompts encouraged users to return and maintain their learning habits.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Solution 5 */}
+        <div className="mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div className="md:col-span-5">
+              <span className="text-xs font-sans tracking-widest uppercase text-muted-foreground mb-2 block">05</span>
+              <h3 className="font-serif text-2xl text-foreground mb-4">Supporting Users When They Get Stuck</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Designed in-app support and guidance features that proactively identified when users were struggling and offered contextual help, reducing frustration and preventing drop-offs at key friction points.
+              </p>
+            </div>
+            <div className="md:col-span-7">
+              <img src={cs2Solution5} alt="User support features" className="w-full" />
             </div>
           </div>
         </div>

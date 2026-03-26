@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import cs1Hero from "@/assets/cs1-hero.jpg";
 import cs1Dashboard from "@/assets/cs1-dashboard.jpg";
 import cs1Insights from "@/assets/cs1-insights.jpg";
+import cs1Structure from "@/assets/cs1-structure.jpg";
+import cs1Approach from "@/assets/cs1-approach.jpg";
 import cs1PatientCard from "@/assets/cs1-patient-card.jpg";
 import cs1Monitoring from "@/assets/cs1-monitoring.jpg";
 import cs1LiveInterface from "@/assets/cs1-live-interface.jpg";
@@ -129,6 +131,16 @@ const CaseStudy1 = () => {
         <img src={cs1Insights} alt="Key insights visualization" className="w-full mt-8" />
       </section>
 
+      {/* Dashboard Structure */}
+      <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
+        <div className="h-px bg-border mb-12" />
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Dashboard Structure</h2>
+        <p className="text-muted-foreground leading-relaxed max-w-[60ch] mb-8">
+          Mapped the full information architecture of the monitoring dashboard, defining how patient data, alerts, vitals, and clinical actions connect across different views and user workflows.
+        </p>
+        <img src={cs1Structure} alt="Dashboard structure and information architecture" className="w-full" />
+      </section>
+
       {/* Design Approach */}
       <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
         <div className="h-px bg-border mb-12" />
@@ -145,6 +157,7 @@ const CaseStudy1 = () => {
             </div>
           ))}
         </div>
+        <img src={cs1Approach} alt="Design approach overview" className="w-full" />
       </section>
 
       {/* Patient Card Redesign */}
