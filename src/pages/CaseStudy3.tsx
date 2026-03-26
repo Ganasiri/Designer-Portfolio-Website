@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import cs3Hero from "@/assets/cs3-hero.jpg";
+import cs3Problem from "@/assets/cs3-problem.jpg";
+import cs3Path from "@/assets/cs3-path.jpg";
 import cs3Research from "@/assets/cs3-research.jpg";
+import cs3Approach from "@/assets/cs3-approach.jpg";
 import cs3Structure from "@/assets/cs3-structure.jpg";
 import cs3Builder from "@/assets/cs3-builder.jpg";
 import cs3Final from "@/assets/cs3-final.jpg";
@@ -80,7 +83,7 @@ const CaseStudy3 = () => {
       {/* How Things Worked Before */}
       <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
         <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8">How Things Worked Before</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             { title: "Manual Content Creation", desc: "Educators had to rely on developers to structure and publish learning content, creating bottlenecks." },
             { title: "No Standard Structure", desc: "Content lacked consistent formatting, making it difficult for learners to navigate across different modules." },
@@ -95,14 +98,28 @@ const CaseStudy3 = () => {
         </div>
       </section>
 
-      {/* The Problem */}
+      {/* The Problem We Needed to Solve */}
       <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
         <div className="h-px bg-border mb-12" />
-        <div className="bg-primary text-primary-foreground p-8 text-center mb-12">
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">The Problem We Needed to Solve</h2>
+        <p className="text-muted-foreground leading-relaxed max-w-[60ch] mb-8">
+          Educators were spending more time coordinating with developers than creating content. The lack of a self-serve tool meant every content update required engineering resources, slowing down the entire learning content pipeline.
+        </p>
+        <img src={cs3Problem} alt="Problem visualization" className="w-full mb-8" />
+        <div className="bg-primary text-primary-foreground p-8 text-center">
           <p className="text-sm leading-relaxed max-w-[50ch] mx-auto">
-            "The key product development question: How might we empower educators to create structured, interactive learning content without needing technical support?"
+            "How might we empower educators to create structured, interactive learning content without needing technical support?"
           </p>
         </div>
+      </section>
+
+      {/* Finding the Path Forward */}
+      <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Finding the Path Forward</h2>
+        <p className="text-muted-foreground leading-relaxed max-w-[60ch] mb-8">
+          Through stakeholder workshops and educator interviews, we identified the core requirements: a tool that balanced flexibility with guardrails, enabling creative content creation while maintaining structural consistency.
+        </p>
+        <img src={cs3Path} alt="Path forward analysis" className="w-full" />
       </section>
 
       {/* Research Findings */}
@@ -116,8 +133,9 @@ const CaseStudy3 = () => {
 
       {/* Our Approach */}
       <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
+        <div className="h-px bg-border mb-12" />
         <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8">Our Approach</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {[
             { step: "1", title: "Pre-defined content layouts", desc: "Created a library of reusable content templates that standardized the learning experience." },
             { step: "2", title: "Drag-and-drop building", desc: "Designed an intuitive builder interface that allowed educators to compose modules visually." },
@@ -130,6 +148,16 @@ const CaseStudy3 = () => {
             </div>
           ))}
         </div>
+        <img src={cs3Approach} alt="Approach overview" className="w-full" />
+      </section>
+
+      {/* What We Built */}
+      <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">What We Built</h2>
+        <p className="text-muted-foreground leading-relaxed max-w-[60ch] mb-8">
+          A modular content builder that gives educators full control over their learning content — from structure to interactivity — without writing a single line of code.
+        </p>
+        <img src={cs3Builder} alt="What we built" className="w-full" />
       </section>
 
       {/* Creating the Structure */}
@@ -148,10 +176,9 @@ const CaseStudy3 = () => {
         <p className="text-muted-foreground leading-relaxed max-w-[60ch] mb-8">
           Introduced interactive content blocks — quizzes, drag-and-drop activities, multimedia embeds — that educators could add to any lesson without writing code. Each block type was designed to be self-contained and configurable.
         </p>
-        <img src={cs3Builder} alt="Interactive content builder" className="w-full" />
       </section>
 
-      {/* Designing the Builder Interface */}
+      {/* How It All Comes Together */}
       <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">How It All Comes Together</h2>
         <p className="text-muted-foreground leading-relaxed max-w-[60ch] mb-8">
@@ -178,7 +205,7 @@ const CaseStudy3 = () => {
         </div>
       </section>
 
-      {/* Bottom Note */}
+      {/* Reflection */}
       <section className="px-6 md:px-16 max-w-[1440px] mx-auto mb-20">
         <div className="bg-card border border-border p-8">
           <h2 className="font-serif text-xl text-foreground mb-4">Reflection</h2>
